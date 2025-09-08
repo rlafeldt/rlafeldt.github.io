@@ -75,13 +75,24 @@
         .resume-btn:hover {
             background: #586069;
         }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid #f0f0f0;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <img src="profile-photo.jpeg" alt="Raphael Lafeldt" class="profile-photo">
         <h1>Raphael Lafeldt</h1>
-        <p>Computer Science student at Georgia Tech focused on AI and FinTech | Builder of data-driven products with real-world impact</p>
+        <p>Computer Science student at Georgia Tech focused on AI and FinTech | Builder of data-driven products with
+            real-world impact</p>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -92,13 +103,13 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            CS undergraduate at Georgia Institute of Technology passionate about AI, optimization, and entrepreneurship. 
-            Experience shipping LLM tooling, building multi-agent systems, and creating apps for startups and NGOs. 
-            Currently based in Atlanta, GA with roots in São Paulo, Brazil. Interested in using technology for 
+            CS undergraduate at Georgia Institute of Technology passionate about AI, optimization, and entrepreneurship.
+            Experience shipping LLM tooling, building multi-agent systems, and creating apps for startups and NGOs.
+            Currently based in Atlanta, GA with roots in São Paulo, Brazil. Interested in using technology for
             financial inclusion and scalable social impact.
         </p>
         <p>
-            <strong>Skills:</strong> Python, Java, SQL, Flutter | Machine Learning, LLMs, Multi-agent systems, 
+            <strong>Skills:</strong> Python, Java, SQL, Flutter | Machine Learning, LLMs, Multi-agent systems,
             Linear optimization | Fluent in English, Portuguese, German, and basic French
         </p>
     </section>
@@ -109,8 +120,8 @@
         <div class="project">
             <h3>ProsperoJus App</h3>
             <p>
-                Automated legal-claim data collection and validation system with contract generation 
-                and portfolio analytics dashboards. Built during my internship to streamline legal 
+                Automated legal-claim data collection and validation system with contract generation
+                and portfolio analytics dashboards. Built during my internship to streamline legal
                 claim processing and improve operational efficiency. <em>Technologies: Python, ML, Data Scraping</em>
             </p>
         </div>
@@ -118,8 +129,8 @@
         <div class="project">
             <h3>Transformation via Code</h3>
             <p>
-                Online educational platform delivering a free interactive Flutter course. Successfully 
-                guided 30 students through completion, with each shipping a mobile app capstone project. 
+                Online educational platform delivering a free interactive Flutter course. Successfully
+                guided 30 students through completion, with each shipping a mobile app capstone project.
                 Focused on making mobile development accessible to underserved communities.
                 <em>Technologies: Flutter, Educational Platform Development</em>
             </p>
@@ -128,8 +139,8 @@
         <div class="project">
             <h3>Mãos na Massa NGO App</h3>
             <p>
-                Flutter mobile app used by 80+ volunteers to join builds and track construction progress 
-                for community projects. Features include volunteer coordination, progress tracking, and 
+                Flutter mobile app used by 80+ volunteers to join builds and track construction progress
+                for community projects. Features include volunteer coordination, progress tracking, and
                 leadership dashboard for logistics management. Helped the NGO expand to additional schools.
                 <em>Technologies: Flutter, Firebase, Project Management</em>
             </p>
@@ -138,10 +149,48 @@
         <div class="project">
             <h3>Multi-Agent Compliance Bot</h3>
             <p>
-                Built during my AI Prompt Engineer internship at CloudWalk Inc. Developed a multi-agent 
-                system to reduce compliance and risk false positives, improving operational efficiency. 
-                Also implemented Python linear optimization for receivables allocation, reducing daily 
+                Built during my AI Prompt Engineer internship at CloudWalk Inc. Developed a multi-agent
+                system to reduce compliance and risk false positives, improving operational efficiency.
+                Also implemented Python linear optimization for receivables allocation, reducing daily
                 funding costs by ~$50,000. <em>Technologies: Python, LLMs, Multi-agent Systems, Linear Optimization</em>
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>GT Movies Store</h3>
+            <p>
+                Full-stack Django e-commerce web application for movie purchasing and reviews, developed for CS 2340.
+                Implemented complete user authentication, movie catalog browsing, shopping cart functionality, and
+                review system. Features responsive design with comprehensive order management and administrative
+                controls.
+            </p>
+            <p>
+                <strong>Key Features Implemented:</strong>
+                • User registration/authentication with secure login system<br>
+                • Movie catalog with search, filtering, and detailed view pages<br>
+                • Shopping cart with add/remove functionality and order processing<br>
+                • Review system allowing users to create, edit, and delete movie reviews<br>
+                • Order history tracking and administrative management tools<br>
+                • Responsive GUI supporting desktop and mobile devices
+            </p>
+            <p>
+                <strong>Development Approach:</strong> Followed user-story driven development methodology, implementing
+                20 distinct user stories covering both customer and administrator perspectives. Applied Django's MVT
+                architecture with SQLite database, leveraging built-in authentication and ORM for rapid development.
+                Utilized iterative testing and debugging to ensure feature completeness and user experience quality.
+            </p>
+            <p>
+                <strong>Technical Implementation:</strong> Built comprehensive models for Movies, Reviews, Orders, and
+                Items
+                with proper relationships. Implemented Django templates for responsive frontend, cart session
+                management,
+                and secure user authentication flows. Addressed challenges in cart persistence, user permission
+                handling,
+                and database optimization through systematic problem-solving and Django best practices.
+            </p>
+            <p>
+                <em>Technologies: Django 5.0, Python, SQLite, HTML/CSS, Django Templates</em><br>
+                <em>Video demonstration showcasing all features available upon request</em>
             </p>
         </div>
     </section>
@@ -151,11 +200,11 @@
         <p>Email: <a href="mailto:rlafeldt3@gatech.edu">rlafeldt3@gatech.edu</a></p>
         <p>GitHub: <a href="https://github.com/rlafeldt">@rlafeldt</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/raphael-lafeldt/">linkedin.com/in/raphael-lafeldt</a></p>
-        <p><a href="resume.pdf" download class="resume-btn">Download Resume</a></p>
+        <p><a href="resume.pdf" download="Raphael_Lafeldt_AI_Engineer.pdf" class="resume-btn">Download Resume</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Raphael Lafeldt. Built with ❤️ and hosted on GitHub Pages.</p>
+        <p>&copy; 2025 Raphael Lafeldt. Computer Science Student at Georgia Institute of Technology.</p>
     </footer>
 </body>
 
