@@ -356,6 +356,7 @@
     <header>
         <img src="profile-photo.jpeg" alt="Raphael Lafeldt" class="profile-photo">
         <h1>Raphael Lafeldt</h1>
+        <a href="resume.pdf" download="Raphael_Lafeldt_AI_Engineer.pdf" class="resume-btn">Download Resume</a>
         <p>Computer Science student at Georgia Tech focused on AI and FinTech | Builder of data-driven products with
             real-world impact</p>
         <nav>
@@ -381,6 +382,82 @@
 
     <section id="projects">
         <h2>Projects</h2>
+
+        <div class="project">
+            <div class="project-header" onclick="toggleProject(this)">
+                <div>
+                    <h3>GT Movies Store</h3>
+                    <div class="project-summary">Full-stack Django e-commerce platform for movie purchasing and reviews</div>
+                </div>
+                <div class="project-meta">
+                    <div class="project-date">September 2025</div>
+                    <div class="project-type">Academic</div>
+                    <div class="expand-icon">+</div>
+                </div>
+            </div>
+            <div class="project-details">
+                <p>
+                    Full-stack Django e-commerce web application for movie purchasing and reviews, developed for CS 2340.
+                    Implemented complete user authentication, movie catalog browsing, shopping cart functionality, and
+                    review system. Features responsive design with comprehensive order management and administrative
+                    controls.
+                </p>
+                <p>
+                    <strong>Key Features Implemented:</strong>
+                    • User registration/authentication with secure login system<br>
+                    • Movie catalog with search, filtering, and detailed view pages<br>
+                    • Shopping cart with add/remove functionality and order processing<br>
+                    • Review system allowing users to create, edit, and delete movie reviews<br>
+                    • Order history tracking and administrative management tools<br>
+                    • Responsive GUI supporting desktop and mobile devices
+                </p>
+                <p>
+                    <strong>Development Approach:</strong> Followed user-story driven development methodology, implementing
+                    20 distinct user stories covering both customer and administrator perspectives. Applied Django's MVT
+                    architecture with SQLite database, leveraging built-in authentication and ORM for rapid development.
+                    Utilized iterative testing and debugging to ensure feature completeness and user experience quality.
+                </p>
+                <p>
+                    <strong>Technical Implementation:</strong> Built comprehensive models for Movies, Reviews, Orders, and Items
+                    with proper relationships. Implemented Django templates for responsive frontend, cart session management,
+                    and secure user authentication flows. Addressed challenges in cart persistence, user permission handling,
+                    and database optimization through systematic problem-solving and Django best practices.
+                </p>
+                <div class="demo-section">
+                    <h4>🎬 Video Demonstration</h4>
+                    <iframe width="100%" height="315" 
+                        src="https://www.youtube.com/embed/oCEPN5af3t8" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p><em>Technologies: Django 5.0, Python, SQLite, HTML/CSS, Django Templates</em></p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header" onclick="toggleProject(this)">
+                <div>
+                    <h3>Multi-Agent Compliance Bot</h3>
+                    <div class="project-summary">AI system reducing compliance false positives, saving $50K daily</div>
+                </div>
+                <div class="project-meta">
+                    <div class="project-date">August 2025</div>
+                    <div class="project-type">Internship</div>
+                    <div class="expand-icon">+</div>
+                </div>
+            </div>
+            <div class="project-details">
+                <p>
+                    Built during my AI Prompt Engineer internship at CloudWalk Inc. Developed a multi-agent
+                    system to reduce compliance and risk false positives, improving operational efficiency.
+                    Also implemented Python linear optimization for receivables allocation, reducing daily
+                    funding costs by ~$50,000.
+                </p>
+                <p><em>Technologies: Python, LLMs, Multi-agent Systems, Linear Optimization</em></p>
+            </div>
+        </div>
 
         <div class="project">
             <div class="project-header" onclick="toggleProject(this)">
@@ -447,82 +524,6 @@
                 <p><em>Technologies: Flutter, Firebase, Project Management</em></p>
             </div>
         </div>
-
-        <div class="project">
-            <div class="project-header" onclick="toggleProject(this)">
-                <div>
-                    <h3>Multi-Agent Compliance Bot</h3>
-                    <div class="project-summary">AI system reducing compliance false positives, saving $50K daily</div>
-                </div>
-                <div class="project-meta">
-                    <div class="project-date">August 2025</div>
-                    <div class="project-type">Internship</div>
-                    <div class="expand-icon">+</div>
-                </div>
-            </div>
-            <div class="project-details">
-                <p>
-                    Built during my AI Prompt Engineer internship at CloudWalk Inc. Developed a multi-agent
-                    system to reduce compliance and risk false positives, improving operational efficiency.
-                    Also implemented Python linear optimization for receivables allocation, reducing daily
-                    funding costs by ~$50,000.
-                </p>
-                <p><em>Technologies: Python, LLMs, Multi-agent Systems, Linear Optimization</em></p>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-header" onclick="toggleProject(this)">
-                <div>
-                    <h3>GT Movies Store</h3>
-                    <div class="project-summary">Full-stack Django e-commerce platform for movie purchasing and reviews</div>
-                </div>
-                <div class="project-meta">
-                    <div class="project-date">September 2025</div>
-                    <div class="project-type">Academic</div>
-                    <div class="expand-icon">+</div>
-                </div>
-            </div>
-            <div class="project-details">
-                <p>
-                    Full-stack Django e-commerce web application for movie purchasing and reviews, developed for CS 2340.
-                    Implemented complete user authentication, movie catalog browsing, shopping cart functionality, and
-                    review system. Features responsive design with comprehensive order management and administrative
-                    controls.
-                </p>
-                <p>
-                    <strong>Key Features Implemented:</strong>
-                    • User registration/authentication with secure login system<br>
-                    • Movie catalog with search, filtering, and detailed view pages<br>
-                    • Shopping cart with add/remove functionality and order processing<br>
-                    • Review system allowing users to create, edit, and delete movie reviews<br>
-                    • Order history tracking and administrative management tools<br>
-                    • Responsive GUI supporting desktop and mobile devices
-                </p>
-                <p>
-                    <strong>Development Approach:</strong> Followed user-story driven development methodology, implementing
-                    20 distinct user stories covering both customer and administrator perspectives. Applied Django's MVT
-                    architecture with SQLite database, leveraging built-in authentication and ORM for rapid development.
-                    Utilized iterative testing and debugging to ensure feature completeness and user experience quality.
-                </p>
-                <p>
-                    <strong>Technical Implementation:</strong> Built comprehensive models for Movies, Reviews, Orders, and Items
-                    with proper relationships. Implemented Django templates for responsive frontend, cart session management,
-                    and secure user authentication flows. Addressed challenges in cart persistence, user permission handling,
-                    and database optimization through systematic problem-solving and Django best practices.
-                </p>
-                <div class="demo-section">
-                    <h4>🎬 Video Demonstration</h4>
-                    <iframe width="100%" height="315" 
-                        src="https://www.youtube.com/embed/oCEPN5af3t8" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <p><em>Technologies: Django 5.0, Python, SQLite, HTML/CSS, Django Templates</em></p>
-            </div>
-        </div>
     </section>
 
     <section id="contact">
@@ -530,7 +531,6 @@
         <p>Email: <a href="mailto:rlafeldt3@gatech.edu">rlafeldt3@gatech.edu</a></p>
         <p>GitHub: <a href="https://github.com/rlafeldt">@rlafeldt</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/raphael-lafeldt/">linkedin.com/in/raphael-lafeldt</a></p>
-        <p><a href="resume.pdf" download="Raphael_Lafeldt_AI_Engineer.pdf" class="resume-btn">Download Resume</a></p>
     </section>
 
     <footer>
