@@ -46,8 +46,10 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button size="sm">
-              Download Resume
+            <Button size="sm" asChild>
+              <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Raphael_Lafeldt_Resume.pdf">
+                Download Resume
+              </a>
             </Button>
           </div>
 
@@ -74,8 +76,10 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button size="sm" className="w-full">
-                Download Resume
+              <Button size="sm" className="w-full" asChild>
+                <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Raphael_Lafeldt_Resume.pdf">
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>

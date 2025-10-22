@@ -19,7 +19,7 @@ const Contact = () => {
             <Mail className="w-8 h-8 mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2">Email</h3>
             <p className="text-muted-foreground mb-4">
-              Drop me a line anytime
+              Email me anytime
             </p>
             <Button asChild variant="outline" className="w-full">
               <a href="mailto:rlafeldt3@gatech.edu">

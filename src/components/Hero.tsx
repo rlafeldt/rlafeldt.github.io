@@ -14,7 +14,7 @@ const Hero = () => {
               <div className="absolute inset-0 gradient-primary rounded-full blur-xl opacity-50 animate-pulse" />
               <div className="relative w-full h-full rounded-full bg-card shadow-card overflow-hidden border-4 border-primary/20">
                 <img
-                  src="/profile-photo.jpeg"
+                  src={`${import.meta.env.BASE_URL}profile-photo.jpeg`}
                   alt="Raphael Lafeldt"
                   className="w-full h-full object-cover"
                 />
@@ -36,7 +36,7 @@ const Hero = () => {
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <Button size="lg" asChild className="gap-2 shadow-lg hover:shadow-xl transition-shadow">
-              <a href="/resume.pdf" download="Raphael_Lafeldt_Resume.pdf">
+              <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Raphael_Lafeldt_Resume.pdf">
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>
