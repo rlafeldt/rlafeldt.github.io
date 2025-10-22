@@ -1,0 +1,6 @@
+# Python requirements for rlafeldt.github.io
+# This project is primarily a React/TypeScript application
+# Python dependencies are minimal and used only for development tooling
+
+# No Python dependencies required for the main application
+# If you need to add Python tooling in the future, add packages below

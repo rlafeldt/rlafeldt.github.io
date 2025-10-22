@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# Raphael Lafeldt - Portfolio Website
 
-## Project info
+Personal portfolio website showcasing my projects, skills, and experience as a Computer Science student at Georgia Tech.
 
-**URL**: https://lovable.dev/projects/8737f48b-1e8e-40f7-adff-a4d9eec0c8ac
+**Live Site**: [rlafeldt.github.io](https://rlafeldt.github.io)
 
-## How can I edit this code?
+## About
 
-There are several ways of editing your application.
+This portfolio website highlights my work in AI, FinTech, and full-stack development. Built with modern web technologies to provide a fast, responsive, and visually appealing user experience.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/8737f48b-1e8e-40f7-adff-a4d9eec0c8ac) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Tech Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **React** - UI framework
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality React components
+- **Lucide React** - Icon library
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/8737f48b-1e8e-40f7-adff-a4d9eec0c8ac) and click on Share -> Publish.
+### Prerequisites
 
-## Can I connect a custom domain to my Lovable project?
+- Node.js (v18 or higher) - [Install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- npm or bun package manager
 
-Yes, you can!
+### Installation
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Clone the repository:
+```sh
+git clone https://github.com/rlafeldt/rlafeldt.github.io.git
+cd rlafeldt.github.io
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+2. Install dependencies:
+```sh
+npm install
+```
+
+3. Start the development server:
+```sh
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development mode
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality checks
+
+## Project Structure
+
+```
+.
+├── src/
+│   ├── components/      # React components
+│   │   ├── Hero.tsx     # Landing section with profile
+│   │   ├── About.tsx    # About me section
+│   │   ├── Projects.tsx # Project showcase
+│   │   ├── Contact.tsx  # Contact information
+│   │   └── ui/          # shadcn/ui components
+│   ├── pages/           # Page components
+│   ├── App.tsx          # Main app component
+│   └── main.tsx         # Entry point
+├── public/              # Static assets
+├── profile-photo.jpeg   # Profile picture
+├── resume.pdf           # Resume file
+└── index.html           # HTML template
+```
+
+## Deployment
+
+This site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch.
+
+### Manual Deployment
+
+1. Build the project:
+```sh
+npm run build
+```
+
+2. The `dist` folder contains the production-ready files
+
+3. Deploy to GitHub Pages or your preferred hosting platform
+
+## Customization
+
+To personalize this portfolio for your own use:
+
+1. Update personal information in the component files
+2. Replace `profile-photo.jpeg` with your photo
+3. Replace `resume.pdf` with your resume
+4. Update project information in `Projects.tsx`
+5. Modify color scheme in `tailwind.config.ts`
+
+## Contact
+
+- **Email**: rlafeldt3@gatech.edu
+- **LinkedIn**: [linkedin.com/in/raphael-lafeldt](https://www.linkedin.com/in/raphael-lafeldt/)
+- **GitHub**: [github.com/rlafeldt](https://github.com/rlafeldt)
+
+## License
+
+This project is open source and available for personal use.

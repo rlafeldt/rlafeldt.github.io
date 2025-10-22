@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
 
-    --primary: 235 65% 55%;
+    --primary: 215 80% 30%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 95%;
@@ -26,21 +26,21 @@ All colors MUST be HSL.
     --muted: 220 15% 95%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 275 70% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 215 20% 65%;
+    --accent-foreground: 220 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 15% 88%;
     --input: 220 15% 88%;
-    --ring: 235 65% 55%;
+    --ring: 215 80% 30%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(235 65% 55%) 0%, hsl(275 70% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(235 65% 55% / 0.1) 0%, hsl(275 70% 60% / 0.05) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(215 80% 30%) 0%, hsl(215 20% 75%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 80% 30% / 0.1) 0%, hsl(215 20% 75% / 0.05) 100%);
     --shadow-card: 0 2px 8px hsl(220 15% 15% / 0.05);
     --shadow-card-hover: 0 8px 24px hsl(220 15% 15% / 0.12);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,7 +56,7 @@ All colors MUST be HSL.
     --popover: 220 20% 12%;
     --popover-foreground: 220 15% 95%;
 
-    --primary: 235 65% 60%;
+    --primary: 215 80% 35%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 16%;
@@ -65,7 +65,7 @@ All colors MUST be HSL.
     --muted: 220 15% 16%;
     --muted-foreground: 220 10% 55%;
 
-    --accent: 275 70% 65%;
+    --accent: 215 15% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
@@ -73,11 +73,11 @@ All colors MUST be HSL.
 
     --border: 220 15% 20%;
     --input: 220 15% 20%;
-    --ring: 235 65% 60%;
+    --ring: 215 80% 35%;
 
     /* Custom dark tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(235 65% 60%) 0%, hsl(275 70% 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(235 65% 60% / 0.15) 0%, hsl(275 70% 65% / 0.08) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(215 80% 35%) 0%, hsl(215 15% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 80% 35% / 0.15) 0%, hsl(215 15% 55% / 0.08) 100%);
     --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.3);
     --shadow-card-hover: 0 8px 24px hsl(0 0% 0% / 0.5);
   }
