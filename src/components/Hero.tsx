@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="container relative z-10 px-4 py-20">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <div className="mb-8 inline-block">
-            <div className="relative w-32 h-32 mx-auto mb-6">
+            <div className="relative w-40 h-40 mx-auto mb-6 transition-transform duration-300 hover:scale-110 cursor-pointer">
               <div className="absolute inset-0 gradient-primary rounded-full blur-xl opacity-50 animate-pulse" />
               <div className="relative w-full h-full rounded-full bg-card shadow-card overflow-hidden border-4 border-primary/20">
                 <img

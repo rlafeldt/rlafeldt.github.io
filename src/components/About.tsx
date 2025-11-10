@@ -44,7 +44,7 @@ const About = () => {
           <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             <p className="text-lg leading-relaxed text-muted-foreground">
               CS undergrad at <span className="font-semibold text-foreground">Georgia Institute of Technology</span> passionate
-              about AI, solving problems with teechnology, and sustainable impact.
+              about AI, solving problems with technology, and sustainable impact.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
               Experience shipping LLM tooling, building multi-agent systems, and creating apps for startups and NGOs.
