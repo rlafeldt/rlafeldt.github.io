@@ -3,9 +3,9 @@ import { Card } from "@/components/ui/card";
 import { Code2, Brain, Rocket, Globe2 } from "lucide-react";
 
 const skills = {
-  languages: ["Python", "Java", "SQL", "Flutter"],
-  technical: ["Machine Learning", "LLMs", "Multi-agent systems", "Linear optimization"],
-  languages_spoken: ["English", "Portuguese", "German", "French (basic)"],
+  languages: ["Python", "Java", "SQL", "C"],
+  technical: ["PyTorch", "AI/ML", "Neural Networks", "Data Analysis", "Excel", "PowerPoint"],
+  languages_spoken: ["English (fluent)", "Portuguese (fluent)", "German (fluent)", "French (basic)"],
 };
 
 const highlights = [
@@ -43,15 +43,15 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              CS undergraduate at <span className="font-semibold text-foreground">Georgia Institute of Technology</span> passionate 
-              about AI, optimization, and entrepreneurship.
+              CS undergrad at <span className="font-semibold text-foreground">Georgia Institute of Technology</span> passionate
+              about AI, solving problems with teechnology, and sustainable impact.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Experience shipping LLM tooling, building multi-agent systems, and creating apps for startups and NGOs. 
+              Experience shipping LLM tooling, building multi-agent systems, and creating apps for startups and NGOs.
               Currently based in Atlanta, GA with roots in São Paulo, Brazil.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Interested in using technology for <span className="font-semibold text-foreground">financial inclusion</span> and 
+              Interested in using technology for <span className="font-semibold text-foreground">financial inclusion</span> and
               <span className="font-semibold text-foreground"> scalable social impact</span>.
             </p>
           </div>
@@ -100,8 +100,8 @@ const About = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((highlight, index) => (
-            <Card 
-              key={highlight.title} 
+            <Card
+              key={highlight.title}
               className="p-6 hover:shadow-card-hover transition-smooth animate-fade-in-up"
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >

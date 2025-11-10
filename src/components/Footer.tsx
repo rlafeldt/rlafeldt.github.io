@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="py-8 px-4 border-t border-border">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Raphael Lafeldt. Built with passion and code.</p>
+          <p>© {new Date().getFullYear()} Raphael Lafeldt.</p>
         </div>
       </div>
     </footer>

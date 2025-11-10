@@ -7,12 +7,43 @@ import { useState } from "react";
 const projects = [
   {
     title: "Multi-Agent Compliance Bot",
-    description: "AI system reducing compliance false positives, saving $50K daily",
-    longDescription: "Built during my AI Prompt Engineer internship at CloudWalk Inc. Developed a multi-agent system to reduce compliance and risk false positives, improving operational efficiency. Also implemented Python linear optimization for receivables allocation, reducing daily funding costs by ~$50,000.",
-    date: "August 2025",
+    description: "AI system reducing compliance false positives and optimizing receivables allocation",
+    longDescription: "Built during my internship at CloudWalk Inc. Contributed to the development of CloudWalk's proprietary foundational LLMs and scalable monitoring solutions for internal processes. Built multi-agent AI bot using OpenAI APIs to enhance operations team performance to detect false positives in cases where clients got blocked by internal compliance and risk rechecks. Optimized allocation in receivables assignment using python linear optimization to reduce daily cost of funding by 3%.",
+    date: "June 2025 - August 2025",
     type: "Internship",
-    technologies: ["Python", "LLMs", "Multi-agent Systems", "Linear Optimization"],
-    impact: "$50K daily savings",
+    technologies: ["Python", "LLMs", "OpenAI APIs", "Multi-agent Systems", "Linear Optimization"],
+    impact: "3% funding cost reduction",
+  },
+  {
+    title: "IntestAI",
+    description: "HealthTech AI-driven dietary analysis app for gut health management",
+    longDescription: "Built 'IntestAI,' a HealthTech AI-driven dietary analysis app that uses multimodal ML models for real-time food recognition and FODMAP content analysis to help people with gut issues like IBS. Integrated retrieval-augmented generation (RAG) pipeline and Supabase backend for personalized low-FODMAP guidance, symptom correlation, and adaptive dietary recommendations.",
+    date: "November 2025",
+    type: "Personal",
+    technologies: ["Python", "Multimodal ML", "RAG", "Supabase", "AI/ML"],
+    features: [
+      "Real-time food recognition using multimodal ML models",
+      "FODMAP content analysis for gut health",
+      "RAG pipeline for personalized dietary guidance",
+      "Symptom correlation and tracking",
+      "Adaptive dietary recommendations",
+    ],
+  },
+  {
+    title: "CareLink",
+    description: "Full-stack Django telehealth app with AI-powered triage system",
+    longDescription: "Developed a full-stack Django telehealth app integrating Google Gemini 2.0 API with a multi-turn triage system, implementing context-aware severity assessment, doctor dashboards, and role-based access control. Built a real-time session-based chat and review system with AJAX interface, user authentication, automated testing, and severity-prioritized triage tracking to ensure reliable AI-powered health evaluation.",
+    date: "October 2025",
+    type: "Personal",
+    technologies: ["Django", "Google Gemini 2.0 API", "AJAX", "Python", "AI/ML"],
+    features: [
+      "Multi-turn AI triage system with context-aware severity assessment",
+      "Doctor dashboards with role-based access control",
+      "Real-time session-based chat with AJAX interface",
+      "User authentication and automated testing",
+      "Severity-prioritized triage tracking",
+    ],
+    liveLink: "https://carelink2340.pythonanywhere.com/",
   },
   {
     title: "GT Movies Store",
@@ -29,14 +60,15 @@ const projects = [
       "Responsive GUI for all devices",
     ],
     videoLink: "https://www.youtube.com/watch?v=oCEPN5af3t8",
+    liveLink: "https://rlafeldt.pythonanywhere.com/",
   },
   {
-    title: "ProsperoJus App",
-    description: "Automated legal-claim data collection and validation system",
-    longDescription: "Automated legal-claim data collection and validation system with contract generation and portfolio analytics dashboards. Built during my internship to streamline legal claim processing and improve operational efficiency.",
-    date: "June 2024",
+    title: "ProsperoJus Software",
+    description: "Smart contract generation and CRM system for credit fund management",
+    longDescription: "Automated generation of smart contracts and portfolio analysis for the credit fund. Implemented a web crawler to collect data from government websites for a regression model to predict payment dates. Developed CRM software for sales employees to easily access new clients and their data in an intuitive pipeline.",
+    date: "May 2024",
     type: "Internship",
-    technologies: ["Python", "ML", "Data Scraping"],
+    technologies: ["Python", "ML", "Web Scraping", "CRM"],
   },
   {
     title: "Transformation via Code",
@@ -61,6 +93,7 @@ const projects = [
 const typeColors: Record<string, string> = {
   Internship: "default",
   Academic: "secondary",
+  Personal: "outline",
   Education: "outline",
   NGO: "outline",
 };
@@ -117,7 +150,7 @@ const Projects = () => {
                     <p className="text-muted-foreground leading-relaxed">
                       {project.longDescription}
                     </p>
-                    
+
                     {project.features && (
                       <div>
                         <h4 className="font-semibold mb-2">Key Features:</h4>
@@ -132,14 +165,24 @@ const Projects = () => {
                       </div>
                     )}
 
-                    {project.videoLink && (
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.videoLink} target="_blank" rel="noopener noreferrer" className="gap-2">
-                          <ExternalLink className="w-4 h-4" />
-                          Watch Demo
-                        </a>
-                      </Button>
-                    )}
+                    <div className="flex gap-2">
+                      {project.liveLink && (
+                        <Button variant="default" size="sm" asChild>
+                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="gap-2">
+                            <ExternalLink className="w-4 h-4" />
+                            View Live App
+                          </a>
+                        </Button>
+                      )}
+                      {project.videoLink && (
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={project.videoLink} target="_blank" rel="noopener noreferrer" className="gap-2">
+                            <ExternalLink className="w-4 h-4" />
+                            Watch Demo
+                          </a>
+                        </Button>
+                      )}
+                    </div>
                   </div>
                 )}
 

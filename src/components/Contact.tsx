@@ -10,7 +10,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
           <div className="w-20 h-1 gradient-primary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Interested in collaborating on projects, internships, or just want to chat about tech and social impact?
+            Interested in collaborating on projects, internships, or just want to chat about tech?
           </p>
         </div>
 
